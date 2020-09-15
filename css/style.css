@@ -1,0 +1,143 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #0c8dc0;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0976a1;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0976a1;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #34b3e4;
+  font-family: "Cambo", serif;
+  font-size: 14px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.1rem;
+}
+.logo-header {
+  color: #34b3e4;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 1rem;
+  box-shadow: 0px 2px 10px 1px black;
+  padding: 5px;
+  border-radius: 12px;
+  font-size: 2.1rem;
+  background-color: white;
+}
+
+.header__logo {
+  display: block;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
+.container {
+  max-width: 70vw;
+  margin: auto;
+  padding: 1px;
+  height: 70vh;
+  overflow-y: auto;
+  margin-bottom: 23px;
+  box-shadow: 0px 0px 5px 1px black;
+  border-radius: 12px;
+  background-color: white;
+}
+.message {
+  background-color: lightgray;
+  width: fit-content;
+  padding: 10px;
+  margin: 17px 12px;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+  box-shadow: 1px 2px 5px black;
+}
+.left {
+  float: left;
+  clear: both;
+  background-color: #b0e9f3;
+}
+
+.right {
+  float: right;
+  clear: both;
+}
+
+.center {
+  display: grid;
+  clear: both;
+  background-color: lightblue;
+  margin: 5px auto;
+  border: 0px;
+}
+
+.send-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#messageInp {
+  border: 0px;
+  border-radius: 6px;
+  height: 34px;
+  width: 65vw;
+  outline-width: 0;
+  padding-left: 1.2em;
+  overflow-wrap: break-word;
+  box-shadow: 1px 1px 5px black;
+}
+.btn {
+  cursor: pointer;
+  background-color: #34b3e4;
+  border-radius: 6px;
+  height: 35px;
+  border: 0px;
+  width: 3rem;
+  box-shadow: 1px 1px 5px black;
+}
+i {
+  color: white;
+}
+
+@media (max-width: 1080px) {
+  body {
+    font-size: 12px;
+  }
+  .message {
+    padding: 6px;
+  }
+}
+
+@media (max-width: 488px) {
+  h1 {
+    font-size: 1.1rem;
+  }
+  .message {
+    padding: 6px;
+  }
+  #messageInp {
+    width: 54vw;
+  }
+}

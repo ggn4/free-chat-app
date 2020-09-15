@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Chat</title>
+    <link rel="icon" href="favicon.png" type="image/png" sizes="16x16" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cambo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>
+        <i class="fa fa-comments logo-header"></i>Free Chat<i
+          class="fa fa-comments logo-header"
+        ></i>
+      </h1>
+    </nav>
+    <div class="container"></div>
+    <div class="send-container">
+      <form action="#" id="form-send">
+        <input
+          type="text"
+          name="messageInp"
+          id="messageInp"
+          placeholder="Type a message"
+          autofocus
+        />
+        <button type="submit" class="btn">
+          <i class="fa fa-send"></i>
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
